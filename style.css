@@ -21,7 +21,11 @@ body{
 .header-img{
     width: 100%;
     border-radius: 12px;
-
+    /* opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden; */
+  
 }
 
 .icon{
@@ -33,7 +37,7 @@ body{
 }
 .card{
     width: 30%;
-background-color: var(--bg-clr-card);
+    background-color: var(--bg-clr-card);
     margin: 3em auto;
     padding: 2em;
     border-radius: 12px;
@@ -64,6 +68,38 @@ background-color: var(--bg-clr-card);
         }
 }
 
+.main{
+    position: relative;
+}
+.middle{
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.header-img:hover {
+    opacity: 0.3;
+}
+
+.main:hover .middle{
+    opacity: 1;
+    cursor: pointer;
+}
+
 strong{
     color: var(--bg-clr-white);
 }
+h4{
+    color: var(--clr-primary-cyan);
+}
+
+h3:hover,strong:hover{
+    color: var(--clr-primary-cyan);
+    cursor: pointer;
+}
+
