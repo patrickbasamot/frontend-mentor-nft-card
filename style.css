@@ -27,6 +27,9 @@ body{
     backface-visibility: hidden; */
   
 }
+h3{
+    color: var(--bg-clr-white);
+}
 
 .icon{
    margin-right: 0.6em;
@@ -36,7 +39,7 @@ body{
     justify-content: space-between;
 }
 .card{
-    width: 30%;
+    width: 28%;
     background-color: var(--bg-clr-card);
     margin: 3em auto;
     padding: 2em;
@@ -68,12 +71,21 @@ hr{
 }
 @media (max-width:925px) {
         .card{
-            width: 80%;
+            width: 50%;
             
         }
         .flex-container,.profile{
-            font-size: 0.8em;
+            font-size: 1em;
         }
+}
+@media (max-width:625px) {
+    .card{
+        width: 80%;
+        
+    }
+    .flex-container,.profile{
+        font-size: 0.8em;
+    }
 }
 
 .main{
