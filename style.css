@@ -1,0 +1,69 @@
+:root{
+    --clr-primary-100: hsl(215, 51%, 70%);
+    --clr-primary-cyan:hsl(178, 100%, 50%);
+
+    --bg-clr-main:hsl(217, 54%, 11%);
+    --bg-clr-card:hsl(216, 50%, 16%);
+    --bg-clr-border:hsl(215, 32%, 27%);
+    --bg-clr-white:hsl(0, 0%, 100%);
+    --fnt-famliy:'Outfit', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-clr-main);
+    color: var(--clr-primary-100);
+    font-family: var(--fnt-famliy);
+}
+.header-img{
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.icon{
+   margin-right: 0.6em;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 30%;
+background-color: var(--bg-clr-card);
+    margin: 3em auto;
+    padding: 2em;
+    border-radius: 12px;
+    /* border: 10px solid var(--bg-clr-border); */
+}
+.flex-1{
+    display: flex;
+    align-items: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    height: 3em;
+    width: 3em;
+    border: 2px solid var(--bg-clr-white);
+    border-radius: 25px;
+}
+/* @media (min-width:650px) {
+        .card{
+            width: 80%;
+        }
+} */
+@media (max-width:925px) {
+        .card{
+            width: 80%;
+        }
+}
+
+strong{
+    color: var(--bg-clr-white);
+}
