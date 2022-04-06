@@ -62,6 +62,10 @@ body{
             width: 80%;
         }
 } */
+
+hr{
+    height: 0.5px;
+}
 @media (max-width:925px) {
         .card{
             width: 80%;
