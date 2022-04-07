@@ -38,10 +38,16 @@ h3{
     display: flex;
     justify-content: space-between;
 }
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .card{
-    width: 28%;
+    width: 22rem;
     background-color: var(--bg-clr-card);
-    margin: 3em auto;
+    min-height: 100vh; 
     padding: 2em;
     border-radius: 12px;
     /* border: 10px solid var(--bg-clr-border); */
@@ -103,11 +109,13 @@ hr{
     -ms-transform: translate(-50%, -50%);
 }
 .header-img:hover {
+    transition: ease-in 0.6s;
     opacity: 0.3;
 }
 
 .main:hover .middle{
     opacity: 1;
+    transition: ease-in 0.5;
     cursor: pointer;
 }
 
@@ -120,6 +128,7 @@ h4{
 
 h3:hover,strong:hover{
     color: var(--clr-primary-cyan);
+    transition: ease-in 0.5;
     cursor: pointer;
 }
 
